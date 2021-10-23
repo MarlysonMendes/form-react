@@ -7,7 +7,7 @@ export const Input = ({label, id,valueInput, setValueInput, form, type, ...props
     }
     return (
         <fieldset>
-            <label htmlFor = {id} form = {form} >{label}</label>
+            <label style={{display: "block"}} htmlFor = {id} form = {form} >{label}</label>
             <input value = {valueInput}
                    onChange={handleChange}
                    type = {type}
